@@ -1,0 +1,106 @@
+Sajana Weerakoon
+
+WORK EXPERIENCE
+
+EXECUTIVE SUMMARY
+
+TECHNICAL SKILLS
+
+weerakoonsajana@gmail.com
++94 77 671 1444
+
+2024 July - Present
+DIPS AS, Norway | Creative Software
+Senior Software Engineer
+Developed RESTful services and microservices using ASP.NET Core Web APIs.
+Developed client-side applications with Blazor framework, incorporating Razor, HTML, and CSS.
+Managed CI/CD pipelines with TeamCity for efficient software deployment and continuous integration.
+Implemented software design patterns, dependency injection, and SOLID principles for enhanced architecture.
+Leveraged Azure DevOps for source control management and developer task tracking to streamline collaboration and project workflows.
+Developed and implemented comprehensive integration test suites to maximize developer testing coverage.
+Demonstrated expertise in working with Oracle databases for efficient data management and integration.
+
+Sajana Weerakoon github.com/Sajana96
+www.linkedin.com/in/sajana-weerakoon-5a2bb9176
+
+Experienced software engineer with over 3 years of expertise in designing and implementing software solutions using C# and .NET/Blazor/ReactJS frameworks. Skilled in collaborating with cross-functional teams to deliver high-quality applications and eager to contribute to impactful projects in a dynamic environment.
+
+Languages & Frameworks: C#, .NET 6/8, .NET Framework 4.6.1, Windows services, Blazor, React with Redux
+DevOps: Azure DevOps, Docker, Kubernetes, Helm, Argo CD, Octopus, Open Lens, CI/CD TeamCity pipelines, Nuget, Choco
+Databases: Oracle, MySQL, SQL Server, MongoDB
+Messaging & Realtime: RabbitMQ, SignalR, Firebase Cloud Messaging (FCM), Apple Push Notification (APNS)
+AI & Data: Python, Machine Learning
+Methodologies: Git (Advanced workflows), TDD, Agile Scrum, Release Management
+
+Software Engineer 2022 January - 2024 June
+DIPS AS, Norway | Creative Software
+Actively contributed to software architecture design for multiple client-facing, billable projects at DIPS AS, a leading eHealth systems provider in Norway.
+Designed and implemented RabbitMQ message broker systems for seamless component communication.
+Deployed services in a Kubernetes environment using Helm charts, Argo CD, and GitOps practices for streamlined and automated deployments.
+Mentored junior developers, conducted technical training, and drove innovation in development methodologies and tools.
+
+Key Achievements:
+Optimized a .NET microservice consuming an Oracle database, improving system performance and scalability, resulting in a 40% increase in Transactions Per Second (TPS) and enhanced capacity to handle higher workloads.
+Containerized legacy IIS and Windows Service applications, including WebAPIs, client applications, and microservices, that significantly enhanced infrastructure management efficiency for the customer support team.
+
+Key Achievements:
+Implemented real-time data progress bars for long-running tasks using SignalR, providing live updates that significantly enhanced user experience and engagement.
+
+2020 August - 2021 March
+DIPS AS Norway | Creative Software
+Software Engineer - Intern 
+Actively contributed to the development of software applications by writing, debugging, and testing code, ensuring alignment with project objectives and coding standards.
+Identifying and fixing bugs and issues in existing codebases.
+Writing and executing test cases to ensure that software is functioning correctly and meeting requirements.
+
+SOFT SKILLS
+Teamwork
+Leadership
+Problem-solving
+Adaptability
+Presentation
+
+INTERESTS
+Online Gaming
+Traveling
+Chess
+
+EDUCATION
+B. Sc. (Hons) in Management and Information Technology
+University of Kelaniya, Sri Lanka
+GPA 3.64 (out of 4.0) Second Class Upper Division
+2018 - 2022
+
+Reading Microsoft Certified: Azure Developer Associate (AZ-204)
+
+PROFESSIONAL QUALIFICATIONS
+2024 IELTS ACADEMIC - Overall Band Score 6.5
+Listening - 6.5, Reading - 7, Writing - 6, Speaking - 7
+
+LANGUAGE QUALIFICATIONS
+
+PROJECTS
+2020 IM Portal (Web Application) 
+Knowledge sharing system created using MongoDB, ExpressJS, React and NodeJS (MERN Stack)
+
+2020 - 2025 Notification Center for “Arena” Medical Record System
+C# .NET 8.0, Blazor, Windows Services RabbitMQ, FCM/APNS, SignalR, Docker and Kubernetes
+A desktop application to deliver RabbitMQ-powered push notifications for patients and practitioners, along with a mobile subscriber module supporting FCM/APNS-based push notifications.
+
+2023 - 2025 Norwegian Address Registry Integration Service
+C#, NET, Blazor, Oracle, SignalR
+A synchronization application to poll updates from the Norwegian National Health Registers and update demographic information of communication parties, enabling subscription-based syncing across all hospitals.
+
+2022 - 2024 Lab Data Sync with QCN
+Oracle QRCN, .NET
+Developed web applications to distribute patient-critical and medical information.
+Utilized Oracle’s Queue Change Notification (QCN) feature, which monitors database changes and triggers event-based push notifications to the application in real time, ensuring timely delivery of critical updates.
+
+EXTRACURRICULAR ACTIVITIES
+Member (Term 2018/19) of AIESEC in Colombo North, University of Kelaniya
+Served in volunteer initiatives aligned with Sustainable Development Goals (SDGs) 8 (Decent Work and Economic Growth) and 15 (Life on Land).
+
+ACHIEVEMENTS
+First Runners Up (Team) - Marketing Campaign Design Category ‘InCo 2019’ organized by the Department of Industrial Management, University of Kelaniya, Sri Lanka
+
+REFEREES - AVAILABLE UPON REQUEST
