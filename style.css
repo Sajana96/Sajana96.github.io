@@ -1,11 +1,13 @@
+/* Bootstrap 5 is included. Custom styles below may override Bootstrap defaults. */
 body, p, span, div, h1, h2, h3, h4, h5, h6, ul, ol, li, label, input, textarea, a, button {
   color: #fff !important;
 }
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: var(--text);
   margin: 0;
   padding: 0;
-  background: #181a1b;
   font-size: 1.15rem;
   transition: background 0.3s, color 0.3s;
 }
@@ -13,41 +15,56 @@ p, span, div, li, ul, ol {
   font-size: 1.08rem;
 }
 :root {
-  --bg: #181a1b;
-  --text: #fff;
-  --accent: #fafafa;
-  --card: #23272a;
-  --card-dark: #181a1b;
-  --border: #333;
-  --grey: #b0b0b0;
-  --white: #fff;
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --accent: #38bdf8;
+  --accent-gradient: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
+  --card: rgba(17, 24, 39, 0.85);
+  --card-dark: rgba(15, 23, 42, 0.85);
+  --border: #334155;
+  --grey: #64748b;
+  --white: #f1f5f9;
+  --shadow: 0 8px 32px 0 rgba(31, 41, 55, 0.25);
 }
 header, #navbar, section {
   background: var(--card);
+  backdrop-filter: blur(8px) saturate(120%);
+  box-shadow: var(--shadow);
 }
 header {
-  padding: 2rem 1rem 1rem 1rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border-radius: 18px;
+  margin: 1.5rem auto 1rem auto;
+  max-width: 900px;
 }
 header h1 {
-  margin: 0.2em 0 0.1em 0;
-  font-size: 2.5rem;
-  color: var(--white);
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--accent);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 header p {
-  margin: 0.2em 0 0.5em 0;
-  font-size: 1.2rem;
   color: var(--grey);
+  font-size: 1.25rem;
 }
 .contact-info {
   margin-bottom: 1em;
 }
 .contact-info a {
   color: var(--accent);
-  text-decoration: none;
-  margin: 0 0.3em;
-  font-size: 1.3em;
+  background: rgba(56, 189, 248, 0.08);
+  border-radius: 50%;
+  padding: 0.4em;
+  margin: 0 0.4em;
+  font-size: 1.4em;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-info a:hover {
+  background: var(--accent);
+  color: var(--bg);
 }
 #download-cv {
   margin: 0.5em 0.3em;
@@ -65,23 +82,21 @@ header p {
   color: #181a1b;
 }
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 950px;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
 }
 section {
-  background: var(--card-dark);
-  margin-bottom: 1.5rem;
-  padding: 1.2rem 1rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  border-radius: 18px;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1.2rem;
   border: 1px solid var(--border);
   color: var(--text);
 }
 section h2 {
-  margin-top: 0;
   color: var(--accent);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .job, .project {
   margin-bottom: 1.2em;
@@ -91,9 +106,118 @@ section h2 {
   grid-template-columns: 1fr 1fr;
   gap: 1.2em;
 }
+@media (max-width: 900px) {
+  header, main {
+    max-width: 100%;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+  }
+  section {
+    padding: 1rem 0.5rem;
+  }
+  #navbar ul {
+    flex-wrap: wrap;
+    gap: 0.3em;
+  }
+  #navbar li {
+    margin: 0 0.3em;
+  }
+}
 @media (max-width: 700px) {
   #projects {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    font-size: 1em;
+    padding: 0;
+  }
+  header {
+    padding: 1.2rem 0.5rem 0.7rem 0.5rem;
+    border-radius: 12px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .counters {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .counter-box {
+    font-size: 1em;
+    padding: 0.3em 0.5em;
+  }
+  #navbar {
+    border-radius: 0 0 12px 12px;
+    padding: 0.2em 0;
+    margin-bottom: 1rem;
+  }
+  #navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  #navbar li {
+    margin: 0.2em 0;
+  }
+  #navbar a {
+    display: block;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    border-radius: 8px;
+  }
+  main {
+    margin: 1rem 0.2rem;
+    padding: 0.2rem;
+  }
+  section {
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0.3rem;
+  }
+  section h2 {
+    font-size: 1.15rem;
+  }
+  .job, .project {
+    font-size: 0.98em;
+  }
+  .contact-info a {
+    font-size: 1.1em;
+    margin: 0 0.2em;
+    padding: 0.3em;
+  }
+  #download-cv, #contact-form button[type="submit"] {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+  }
+  #fab {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3em;
+    bottom: 1.2rem;
+    right: 1.2rem;
+  }
+  .modal-content {
+    padding: 1em 0.5em 0.7em 0.5em;
+    border-radius: 12px;
+    max-width: 98vw;
+  }
+  #contact-form {
+    max-width: 98vw;
+    padding: 0;
+  }
+  input, textarea {
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 6px;
   }
 }
 ul {
@@ -103,12 +227,10 @@ li {
   margin-bottom: 0.4em;
 }
 #navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--card);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  padding: 0.5em 0;
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 1.5rem;
+  background: var(--card-dark);
+  box-shadow: 0 4px 24px rgba(30, 41, 59, 0.15);
 }
 #navbar ul {
   display: flex;
@@ -124,15 +246,17 @@ li {
 #navbar a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  background: transparent;
   padding: 0.3em 0.7em;
   border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   font-size: 1.08rem;
 }
 #navbar a:hover, #navbar a:focus {
-  background: var(--grey);
-  color: var(--card-dark);
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.15);
 }
 [data-animate] {
   opacity: 0;
@@ -156,12 +280,12 @@ li {
 .modal-content {
   background: var(--card-dark);
   color: var(--text);
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 2em 1.5em 1.5em 1.5em;
   max-width: 400px;
   width: 90vw;
   position: relative;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  box-shadow: var(--shadow);
   animation: modalIn 0.3s cubic-bezier(.4,0,.2,1);
   border: 1px solid var(--border);
 }
@@ -194,45 +318,89 @@ button:hover, .project[role="button"]:hover, .project[role="button"]:focus {
   gap: 0.7em;
   max-width: 400px;
 }
-#contact-form input, #contact-form textarea {
-  padding: 0.5em;
-  border: 1px solid var(--grey);
-  border-radius: 4px;
-  font-size: 1em;
-  background: #23272a;
+input, textarea {
+  background: rgba(30, 41, 59, 0.85);
   color: var(--white);
-  transition: border 0.2s;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6em;
+  font-size: 1em;
+  transition: border 0.2s, background 0.2s;
 }
-#contact-form input:focus, #contact-form textarea:focus {
+input:focus, textarea:focus {
   border: 1.5px solid var(--accent);
+  background: rgba(56, 189, 248, 0.08);
   outline: none;
 }
 #contact-form button[type="submit"] {
-  background: var(--grey);
-  color: var(--white);
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
   border: none;
-  border-radius: 4px;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 0.5em;
-  transition: background 0.2s;
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  font-size: 1.08em;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 #contact-form button[type="submit"]:hover {
-  background: var(--white);
-  color: #181a1b;
+  background: #2563eb;
+  color: var(--white);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.18);
 }
 .error {
-  color: #e53935;
+  color: #ef4444;
   font-size: 0.95em;
   min-height: 1.2em;
 }
 .success {
-  color: #388e3c;
+  color: #22c55e;
   font-size: 1em;
   margin-top: 0.5em;
   display: block;
 }
 .fa-solid, .fa-brands {
   margin-right: 0.4em;
+}
+.skill-list .progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background: #334155;
+  margin-top: 0.3em;
+  overflow: hidden;
+  position: relative;
+}
+.skill-list .progress-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--accent-gradient);
+  width: attr(data-progress '%');
+  min-width: 10%;
+  transition: width 1s cubic-bezier(.4,0,.2,1);
+}
+#fab {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background: var(--accent-gradient);
+  color: var(--bg);
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 2em;
+  box-shadow: 0 4px 24px rgba(56, 189, 248, 0.18);
+  cursor: pointer;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+#fab:hover {
+  background: #2563eb;
+  color: var(--white);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.22);
 } 

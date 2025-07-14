@@ -133,4 +133,19 @@ form.addEventListener('submit', function(e) {
     formSuccess.textContent = 'Thank you! Your message has been sent (demo only).';
     form.reset();
   }
-}); 
+});
+
+// FAB (Floating Action Button) scroll-to-top or contact
+const fabBtn = document.getElementById('fab');
+if (fabBtn) {
+  fabBtn.addEventListener('click', () => {
+    if (window.scrollY > 100) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+} 
