@@ -1,7 +1,7 @@
 // Download CV
 const downloadBtn = document.getElementById('download-cv');
 downloadBtn.addEventListener('click', () => {
-  window.open('Sajana Weerakoon.pdf', '_blank');
+  window.open('Sajana Weerakoon CV.pdf', '_blank');
 });
 
 // Section reveal on scroll
